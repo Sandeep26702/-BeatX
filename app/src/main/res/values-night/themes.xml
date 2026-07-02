@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BeatX" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Main Colors -->
+        <item name="colorPrimary">@color/brand_purple</item>
+        <item name="colorOnPrimary">@color/brand_white</item>
+        <item name="colorPrimaryContainer">@color/brand_dark_gray</item>
+        <item name="colorOnPrimaryContainer">@color/brand_white</item>
+
+        <!-- Accent Colors -->
+        <item name="colorSecondary">@color/brand_green</item>
+        <item name="colorOnSecondary">@color/brand_dark_navy</item>
+        <item name="colorSecondaryContainer">@color/brand_green</item>
+        <item name="colorOnSecondaryContainer">@color/brand_dark_navy</item>
+
+        <!-- Background & Surfaces -->
+        <item name="android:windowBackground">@color/brand_dark_navy</item>
+        <item name="colorSurface">@color/brand_dark_gray</item>
+        <item name="colorOnSurface">@color/brand_white</item>
+        <item name="colorSurfaceVariant">@color/brand_dark_gray</item>
+        <item name="colorOnSurfaceVariant">@color/brand_white</item>
+        <item name="colorOutline">@color/brand_text_secondary</item>
+
+        <!-- Force Text Colors -->
+        <item name="android:textColor">@color/brand_white</item>
+        <item name="android:textColorHint">@color/brand_text_secondary</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.BeatX.16dp</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.BeatX.16dp</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.BeatX.16dp</item>
+        
+        <item name="bottomNavigationStyle">@style/Widget.BeatX.BottomNavigationView</item>
+    </style>
+
+    <style name="Theme.BeatX.AMOLED" parent="Theme.BeatX">
+        <item name="android:windowBackground">#000000</item>
+        <item name="colorSurface">#000000</item>
+        <item name="bottomNavigationStyle">@style/Widget.BeatX.BottomNavigationView.AMOLED</item>
+    </style>
+
+    <style name="Widget.BeatX.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/brand_dark_navy</item>
+        <item name="itemIconTint">@color/brand_white</item>
+        <item name="itemTextColor">@color/brand_white</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.BeatX.BottomNavigationView.ActiveIndicator</item>
+    </style>
+    
+    <style name="Widget.BeatX.BottomNavigationView.AMOLED" parent="Widget.BeatX.BottomNavigationView">
+        <item name="backgroundTint">#000000</item>
+    </style>
+
+    <style name="Widget.BeatX.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/brand_purple</item>
+    </style>
+</resources>

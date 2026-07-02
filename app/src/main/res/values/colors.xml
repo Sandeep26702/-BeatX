@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_dark_navy">#0B1120</color>
+    <color name="brand_purple">#8B5CF6</color>
+    <color name="brand_green">#10B981</color>
+    <color name="brand_dark_gray">#1E293B</color>
+    <color name="brand_white">#FFFFFF</color>
+    <color name="brand_text_secondary">#94A3B8</color>
+</resources>

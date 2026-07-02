@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BeatX</string>
+    <string name="nav_home">होम</string>
+    <string name="nav_search">खोज</string>
+    <string name="nav_library">लाइब्रेरी</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+</resources>

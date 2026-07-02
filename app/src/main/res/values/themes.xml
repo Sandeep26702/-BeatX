@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BeatX" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Main Colors (Light Mode) -->
+        <item name="colorPrimary">@color/brand_purple</item>
+        <item name="colorOnPrimary">@color/brand_white</item>
+        <item name="colorPrimaryContainer">#F1F5F9</item>
+        <item name="colorOnPrimaryContainer">#0F172A</item>
+
+        <!-- Accent Colors -->
+        <item name="colorSecondary">@color/brand_green</item>
+        <item name="colorOnSecondary">@color/brand_white</item>
+        <item name="colorSecondaryContainer">#E0F2FE</item>
+        <item name="colorOnSecondaryContainer">#0F172A</item>
+
+        <!-- Background & Surfaces -->
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#0F172A</item>
+        <item name="colorSurfaceVariant">#F1F5F9</item>
+        <item name="colorOnSurfaceVariant">#0F172A</item>
+        <item name="colorOutline">#CBD5E1</item>
+
+        <!-- Force Text Colors -->
+        <item name="android:textColor">#0F172A</item>
+        <item name="android:textColorHint">#64748B</item>
+
+        <!-- Rounded Corners (16dp Globally) -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.BeatX.16dp</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.BeatX.16dp</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.BeatX.16dp</item>
+        
+        <!-- Bottom Navigation Background Override -->
+        <item name="bottomNavigationStyle">@style/Widget.BeatX.BottomNavigationView</item>
+    </style>
+
+    <!-- Global 16dp Corner Shape -->
+    <style name="ShapeAppearance.BeatX.16dp" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Bottom Navigation Styling -->
+    <style name="Widget.BeatX.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">#FFFFFF</item>
+        <item name="itemIconTint">#0F172A</item>
+        <item name="itemTextColor">#0F172A</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.BeatX.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.BeatX.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/brand_purple</item>
+    </style>
+</resources>
