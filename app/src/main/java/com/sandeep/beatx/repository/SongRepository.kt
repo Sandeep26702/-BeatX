@@ -8,7 +8,7 @@ class SongRepository {
     private val api = RetrofitClient.apiService
 
     suspend fun getTopSongs(): List<Song> {
-        val response = api.getTopTracks(30)
+        val response = api.searchTracks("top hits")
         return response.data.map { mapToDomain(it) }
     }
 
