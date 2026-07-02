@@ -23,9 +23,7 @@ jobs:
       run: |
         wget -q https://services.gradle.org/distributions/gradle-8.6-bin.zip
         unzip -q gradle-8.6-bin.zip
-        export PATH=$PWD/gradle-8.6/bin:$PATH
-        gradle --version
-        gradle assembleDebug
+        ./gradle-8.6/bin/gradle assembleDebug
       
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
